@@ -1,5 +1,3 @@
-version: '3.8'
-
 networks:
   aetcg_secure_mesh:
     driver: bridge
