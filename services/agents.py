@@ -32,6 +32,8 @@ class TriageAgent:
                 timeout=settings.EXTERNAL_API_TIMEOUT_SEC
             )
             raw_result = response.choices[0].message.content
+            if not isinstance(raw_result, str):
+                raise ValueError("Triage Agent returned empty or non-string content")
             print(f"Triage Agent Result: {raw_result}")
             return self.parse_analysis_result(raw_result)
 
@@ -84,6 +86,8 @@ class ComplianceCriticAgent:
                 timeout=settings.EXTERNAL_API_TIMEOUT_SEC
             )
             raw_result = response.choices[0].message.content
+            if not isinstance(raw_result, str):
+                raise ValueError("Critic Agent returned empty or non-string content")
             return self.parse_critique_result(raw_result)
 
         except Exception as e:
