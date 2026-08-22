@@ -9,7 +9,7 @@ class AppSettings(BaseSettings):
     EXTERNAL_API_TIMEOUT_SEC: float = 5.0
 
     LLM_ENDPOINT_URL: str = "https://studio.bearcatgpt.uc.edu/api/v1/"
-    LLM_ACCESS_TOKEN: str
+    LLM_ACCESS_TOKEN: str = ""
 
     model_config = {"env_file": ".env"}
 
