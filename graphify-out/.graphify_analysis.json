@@ -1,0 +1,261 @@
+{
+  "communities": {
+    "0": [
+      "basemodel",
+      "field_validator",
+      "match",
+      "pipeline_validation_datasanitizationpipeline",
+      "pipeline_validation_datasanitizationpipeline_init",
+      "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "pipeline_validation_datasanitizationpipeline_route_to_dlq",
+      "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "pipeline_validation_datasanitizationpipeline_scrub_pii_replace_func",
+      "pipeline_validation_rationale_38",
+      "pipeline_validation_rationale_46",
+      "pipeline_validation_ticketingestionschema",
+      "pipeline_validation_ticketingestionschema_validate_corporate_domain",
+      "pytest",
+      "tests_test_pipeline",
+      "tests_test_pipeline_rationale_33",
+      "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "tests_test_pipeline_test_pydantic_corporate_domain_enforcement",
+      "tests_test_pipeline_test_regex_pii_scrubbing_pipeline"
+    ],
+    "1": [
+      "any",
+      "pipeline_orchestrator_statemachineorchestrator",
+      "pipeline_orchestrator_statemachineorchestrator_execute_workflow",
+      "pipeline_orchestrator_statemachineorchestrator_init",
+      "services_agents_compliancecriticagent",
+      "services_agents_compliancecriticagent_critique",
+      "services_agents_compliancecriticagent_parse_critique_result",
+      "services_agents_rationale_104",
+      "services_agents_rationale_138",
+      "services_agents_rationale_17",
+      "services_agents_rationale_183",
+      "services_agents_rationale_46",
+      "services_agents_rationale_88",
+      "services_agents_triageagent",
+      "services_agents_triageagent_analyze",
+      "services_agents_triageagent_parse_analysis_result"
+    ],
+    "2": [
+      "fastapi",
+      "fastapi_middleware_cors",
+      "fastapi_responses",
+      "get",
+      "logging",
+      "main",
+      "main_get_state",
+      "main_ingest_ticket",
+      "post",
+      "redis",
+      "rq",
+      "rq_worker",
+      "time",
+      "worker",
+      "worker_process_pipeline_task",
+      "worker_queue_triage_job"
+    ],
+    "3": [
+      "config_settings",
+      "json",
+      "os",
+      "pipeline_orchestrator",
+      "pipeline_validation",
+      "pydantic",
+      "pydantic_settings",
+      "re",
+      "services_agents",
+      "services_agents_rationale_1",
+      "typing"
+    ],
+    "4": [
+      "main_add_security_headers",
+      "main_administrative_approval_gate",
+      "main_check_rate_limit",
+      "main_rate_limit_middleware",
+      "main_rationale_40",
+      "main_rationale_66",
+      "main_rationale_82",
+      "middleware",
+      "put",
+      "request"
+    ],
+    "5": [
+      "basesettings",
+      "config_settings_appsettings",
+      "config_settings_appsettings_validate_app_env",
+      "config_settings_appsettings_validate_llm_token",
+      "validator"
+    ],
+    "6": [
+      "openai",
+      "services_agents_compliancecriticagent_init",
+      "services_agents_rationale_112",
+      "services_agents_rationale_25",
+      "services_agents_triageagent_init"
+    ],
+    "7": [
+      "config_init"
+    ],
+    "8": [
+      "pipeline_init"
+    ],
+    "9": [
+      "services_init"
+    ],
+    "10": [
+      "tests_init"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1286549707602339,
+    "1": 0.18333333333333332,
+    "2": 0.16666666666666666,
+    "3": 0.3090909090909091,
+    "4": 0.24444444444444444,
+    "5": 0.5,
+    "6": 0.4,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "pipeline_validation_datasanitizationpipeline",
+      "label": "DataSanitizationPipeline",
+      "degree": 11
+    },
+    {
+      "id": "pipeline_orchestrator_statemachineorchestrator",
+      "label": "StateMachineOrchestrator",
+      "degree": 8
+    },
+    {
+      "id": "services_agents_triageagent",
+      "label": "TriageAgent",
+      "degree": 8
+    },
+    {
+      "id": "services_agents_compliancecriticagent",
+      "label": "ComplianceCriticAgent",
+      "degree": 8
+    },
+    {
+      "id": "pipeline_validation_ticketingestionschema",
+      "label": "TicketIngestionSchema",
+      "degree": 7
+    },
+    {
+      "id": "main_rate_limit_middleware",
+      "label": "rate_limit_middleware()",
+      "degree": 5
+    },
+    {
+      "id": "main_ingest_ticket",
+      "label": "ingest_ticket()",
+      "degree": 5
+    },
+    {
+      "id": "config_settings_appsettings",
+      "label": "AppSettings",
+      "degree": 4
+    },
+    {
+      "id": "main_check_rate_limit",
+      "label": "check_rate_limit()",
+      "degree": 4
+    },
+    {
+      "id": "main_add_security_headers",
+      "label": "add_security_headers()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "ingest_ticket()",
+      "target": "TicketIngestionSchema",
+      "source_files": [
+        "main.py",
+        "pipeline/validation.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "StateMachineOrchestrator",
+      "target": "ComplianceCriticAgent",
+      "source_files": [
+        "pipeline/orchestrator.py",
+        "services/agents.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "StateMachineOrchestrator",
+      "target": "TriageAgent",
+      "source_files": [
+        "pipeline/orchestrator.py",
+        "services/agents.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "uses",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "process_pipeline_task()",
+      "target": "StateMachineOrchestrator",
+      "source_files": [
+        "worker.py",
+        "pipeline/orchestrator.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "test_pydantic_corporate_domain_enforcement()",
+      "target": "TicketIngestionSchema",
+      "source_files": [
+        "tests/test_pipeline.py",
+        "pipeline/validation.py"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "connects across different repos/directories; peripheral node `test_pydantic_corporate_domain_enforcement()` unexpectedly reaches hub `TicketIngestionSchema`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `DataSanitizationPipeline` connect `Community 0` to `Community 1`, `Community 3`?",
+      "why": "High betweenness centrality (0.225) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `TriageAgent` connect `Community 1` to `Community 3`, `Community 6`?",
+      "why": "High betweenness centrality (0.145) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ComplianceCriticAgent` connect `Community 1` to `Community 3`, `Community 6`?",
+      "why": "High betweenness centrality (0.145) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 3 inferred relationships involving `StateMachineOrchestrator` (e.g. with `DataSanitizationPipeline` and `ComplianceCriticAgent`) actually correct?",
+      "why": "`StateMachineOrchestrator` has 3 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1286549707602339 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

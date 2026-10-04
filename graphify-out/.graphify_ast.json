@@ -1,0 +1,2136 @@
+{
+  "nodes": [
+    {
+      "id": "config_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "config/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "config_settings",
+      "label": "settings.py",
+      "file_type": "code",
+      "source_file": "config/settings.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "config_settings_appsettings",
+      "label": "AppSettings",
+      "file_type": "code",
+      "source_file": "config/settings.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "basesettings",
+      "label": "BaseSettings",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "validator",
+      "label": "validator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "config_settings_appsettings_validate_app_env",
+      "label": ".validate_app_env()",
+      "file_type": "code",
+      "source_file": "config/settings.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "config_settings_appsettings_validate_llm_token",
+      "label": ".validate_llm_token()",
+      "file_type": "code",
+      "source_file": "config/settings.py",
+      "source_location": "L52",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "main",
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_check_rate_limit",
+      "label": "check_rate_limit()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "request",
+      "label": "Request",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "middleware",
+      "label": "middleware",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_rate_limit_middleware",
+      "label": "rate_limit_middleware()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L65",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "main_add_security_headers",
+      "label": "add_security_headers()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L81",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "post",
+      "label": "post",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_ingest_ticket",
+      "label": "ingest_ticket()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L91",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "get",
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_get_state",
+      "label": "get_state()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L145",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "put",
+      "label": "put",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_administrative_approval_gate",
+      "label": "administrative_approval_gate()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L159",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "main_rationale_40",
+      "label": "Basic rate limiting by IP address",
+      "file_type": "rationale",
+      "source_file": "main.py",
+      "source_location": "L40",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_rationale_66",
+      "label": "Middleware to enforce rate limiting",
+      "file_type": "rationale",
+      "source_file": "main.py",
+      "source_location": "L66",
+      "_origin": "ast"
+    },
+    {
+      "id": "main_rationale_82",
+      "label": "Add security headers to responses",
+      "file_type": "rationale",
+      "source_file": "main.py",
+      "source_location": "L82",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "pipeline/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_orchestrator",
+      "label": "orchestrator.py",
+      "file_type": "code",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_orchestrator_statemachineorchestrator",
+      "label": "StateMachineOrchestrator",
+      "file_type": "code",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_orchestrator_statemachineorchestrator_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L8",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_orchestrator_statemachineorchestrator_execute_workflow",
+      "label": ".execute_workflow()",
+      "file_type": "code",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L19",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation",
+      "label": "validation.py",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_ticketingestionschema",
+      "label": "TicketIngestionSchema",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L7",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "basemodel",
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "field_validator",
+      "label": "field_validator",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_ticketingestionschema_validate_corporate_domain",
+      "label": ".validate_corporate_domain()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L14",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline",
+      "label": "DataSanitizationPipeline",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L19",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "label": "._is_safe_match()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L37",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "match",
+      "label": "Match",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "label": ".scrub_pii()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline_scrub_pii_replace_func",
+      "label": "replace_func()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L51",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_datasanitizationpipeline_route_to_dlq",
+      "label": ".route_to_dlq()",
+      "file_type": "code",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L61",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_rationale_38",
+      "label": "Check if a match should be whitelisted (not scrubbed)",
+      "file_type": "rationale",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "pipeline_validation_rationale_46",
+      "label": "Enhanced PII scrubbing with whitelist protection",
+      "file_type": "rationale",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "services/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents",
+      "label": "agents.py",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_triageagent",
+      "label": "TriageAgent",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L16",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_triageagent_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L24",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "openai",
+      "label": "OpenAI",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_triageagent_analyze",
+      "label": ".analyze()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L45",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "any",
+      "label": "Any",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_triageagent_parse_analysis_result",
+      "label": ".parse_analysis_result()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L87",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_compliancecriticagent",
+      "label": "ComplianceCriticAgent",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L103",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_compliancecriticagent_init",
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L111",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_compliancecriticagent_critique",
+      "label": ".critique()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L137",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_compliancecriticagent_parse_critique_result",
+      "label": ".parse_critique_result()",
+      "file_type": "code",
+      "source_file": "services/agents.py",
+      "source_location": "L182",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_1",
+      "label": "AI Agent Services for AETCG Platform This module contains the AI agent…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_17",
+      "label": "Analyzes IT tickets to produce risk scores, categories, and reasoning. The…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L17",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_25",
+      "label": "Initialize the Triage Agent with optional OpenAI client. Args: client: Pre-…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L25",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_46",
+      "label": "Analyze IT ticket text to produce risk assessment. Args: target_text: The…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L46",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_88",
+      "label": "Parse raw LLM response into structured dictionary. Args: raw_result: JSON…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L88",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_104",
+      "label": "Reviews triage agent output for governance compliance. The agent evaluates…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L104",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_112",
+      "label": "Initialize the Compliance Critic Agent with optional OpenAI client. Args:…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L112",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_138",
+      "label": "Review triage agent output for compliance governance. Args: verdict_text: The…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L138",
+      "_origin": "ast"
+    },
+    {
+      "id": "services_agents_rationale_183",
+      "label": "Parse raw LLM response into structured dictionary. Args: raw_result: JSON…",
+      "file_type": "rationale",
+      "source_file": "services/agents.py",
+      "source_location": "L183",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_init",
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_pipeline",
+      "label": "test_pipeline.py",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_pipeline_test_pydantic_corporate_domain_enforcement",
+      "label": "test_pydantic_corporate_domain_enforcement()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L4",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_pipeline_test_regex_pii_scrubbing_pipeline",
+      "label": "test_regex_pii_scrubbing_pipeline()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L21",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "label": "test_enhanced_pii_scrubbing()",
+      "file_type": "code",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L32",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "tests_test_pipeline_rationale_33",
+      "label": "Test enhanced PII scrubbing for additional patterns",
+      "file_type": "rationale",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L33",
+      "_origin": "ast"
+    },
+    {
+      "id": "worker",
+      "label": "worker.py",
+      "file_type": "code",
+      "source_file": "worker.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "worker_process_pipeline_task",
+      "label": "process_pipeline_task()",
+      "file_type": "code",
+      "source_file": "worker.py",
+      "source_location": "L11",
+      "_callable": true,
+      "_origin": "ast"
+    },
+    {
+      "id": "worker_queue_triage_job",
+      "label": "queue_triage_job()",
+      "file_type": "code",
+      "source_file": "worker.py",
+      "source_location": "L20",
+      "_callable": true,
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "config_settings",
+      "target": "pydantic_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings",
+      "target": "config_settings_appsettings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings_appsettings",
+      "target": "basesettings",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings_appsettings_validate_app_env",
+      "target": "validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings_appsettings",
+      "target": "config_settings_appsettings_validate_app_env",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings_appsettings_validate_llm_token",
+      "target": "validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "config_settings_appsettings",
+      "target": "config_settings_appsettings_validate_llm_token",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "config/settings.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "time",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "fastapi",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "fastapi_middleware_cors",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "fastapi_responses",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "pipeline_validation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "worker",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "redis",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_check_rate_limit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_check_rate_limit",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rate_limit_middleware",
+      "target": "middleware",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_rate_limit_middleware",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rate_limit_middleware",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_add_security_headers",
+      "target": "middleware",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_add_security_headers",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_add_security_headers",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_ingest_ticket",
+      "target": "post",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_ingest_ticket",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_ingest_ticket",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_ingest_ticket",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_get_state",
+      "target": "get",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_get_state",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L145",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_administrative_approval_gate",
+      "target": "put",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "main_administrative_approval_gate",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_administrative_approval_gate",
+      "target": "request",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rate_limit_middleware",
+      "target": "main_check_rate_limit",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rationale_40",
+      "target": "main_check_rate_limit",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rationale_66",
+      "target": "main_rate_limit_middleware",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_rationale_82",
+      "target": "main_add_security_headers",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "redis",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "pipeline_validation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "services_agents",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "pipeline_orchestrator_statemachineorchestrator",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator",
+      "target": "pipeline_orchestrator_statemachineorchestrator_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator",
+      "target": "pipeline_orchestrator_statemachineorchestrator_execute_workflow",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "re",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "pydantic",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_ticketingestionschema",
+      "target": "basemodel",
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_ticketingestionschema_validate_corporate_domain",
+      "target": "field_validator",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_ticketingestionschema",
+      "target": "pipeline_validation_ticketingestionschema_validate_corporate_domain",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline",
+      "target": "pipeline_validation_datasanitizationpipeline_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline",
+      "target": "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "target": "match",
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline",
+      "target": "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "target": "pipeline_validation_datasanitizationpipeline_scrub_pii_replace_func",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline",
+      "target": "pipeline_validation_datasanitizationpipeline_route_to_dlq",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "target": "pipeline_validation_datasanitizationpipeline_scrub_pii_replace_func",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "pipeline/validation.py",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_datasanitizationpipeline_scrub_pii_replace_func",
+      "target": "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_rationale_38",
+      "target": "pipeline_validation_datasanitizationpipeline_is_safe_match",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_validation_rationale_46",
+      "target": "pipeline_validation_datasanitizationpipeline_scrub_pii",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/validation.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "typing",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "openai",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "services_agents_triageagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent",
+      "target": "services_agents_triageagent_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent_init",
+      "target": "openai",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent",
+      "target": "services_agents_triageagent_analyze",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent_analyze",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent",
+      "target": "services_agents_triageagent_parse_analysis_result",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent_parse_analysis_result",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents",
+      "target": "services_agents_compliancecriticagent",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent",
+      "target": "services_agents_compliancecriticagent_init",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent_init",
+      "target": "openai",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent",
+      "target": "services_agents_compliancecriticagent_critique",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent_critique",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent",
+      "target": "services_agents_compliancecriticagent_parse_critique_result",
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent_parse_critique_result",
+      "target": "any",
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_triageagent_analyze",
+      "target": "services_agents_triageagent_parse_analysis_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_compliancecriticagent_critique",
+      "target": "services_agents_compliancecriticagent_parse_critique_result",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_1",
+      "target": "services_agents",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_17",
+      "target": "services_agents_triageagent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_25",
+      "target": "services_agents_triageagent_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_46",
+      "target": "services_agents_triageagent_analyze",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_88",
+      "target": "services_agents_triageagent_parse_analysis_result",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_104",
+      "target": "services_agents_compliancecriticagent",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_112",
+      "target": "services_agents_compliancecriticagent_init",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_138",
+      "target": "services_agents_compliancecriticagent_critique",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "services_agents_rationale_183",
+      "target": "services_agents_compliancecriticagent_parse_critique_result",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "services/agents.py",
+      "source_location": "L183",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "pytest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "pipeline_validation",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "os",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_pydantic_corporate_domain_enforcement",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_regex_pii_scrubbing_pipeline",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_rationale_33",
+      "target": "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "logging",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "redis",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "rq",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "config_settings",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "worker_process_pipeline_task",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "worker_queue_triage_job",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "rq_worker",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker_queue_triage_job",
+      "target": "worker_process_pipeline_task",
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "worker.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main",
+      "target": "worker_queue_triage_job",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "services_agents_triageagent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator",
+      "target": "services_agents_compliancecriticagent",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker",
+      "target": "pipeline_orchestrator_statemachineorchestrator",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_pydantic_corporate_domain_enforcement",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_regex_pii_scrubbing_pipeline",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker_process_pipeline_task",
+      "target": "pipeline_orchestrator_statemachineorchestrator",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "worker.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_ingest_ticket",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "main.py",
+      "source_location": "L91",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L9",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator",
+      "target": "services_agents_triageagent",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator",
+      "target": "services_agents_compliancecriticagent",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_pydantic_corporate_domain_enforcement",
+      "target": "pipeline_validation_ticketingestionschema",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_regex_pii_scrubbing_pipeline",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L22",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "tests_test_pipeline_test_enhanced_pii_scrubbing",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "tests/test_pipeline.py",
+      "source_location": "L34",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "worker_process_pipeline_task",
+      "target": "pipeline_orchestrator_statemachineorchestrator",
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "worker.py",
+      "source_location": "L13",
+      "weight": 0.8,
+      "_origin": "ast"
+    },
+    {
+      "source": "main_ingest_ticket",
+      "target": "worker_queue_triage_job",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "main.py",
+      "source_location": "L127",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator_init",
+      "target": "pipeline_validation_datasanitizationpipeline",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator_init",
+      "target": "services_agents_triageagent",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast"
+    },
+    {
+      "source": "pipeline_orchestrator_statemachineorchestrator_init",
+      "target": "services_agents_compliancecriticagent",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/orchestrator.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "failed_sources": [],
+  "extracted_sources": [
+    "/home/az/aetcg-platform/config/__init__.py",
+    "/home/az/aetcg-platform/config/settings.py",
+    "/home/az/aetcg-platform/main.py",
+    "/home/az/aetcg-platform/pipeline/__init__.py",
+    "/home/az/aetcg-platform/pipeline/orchestrator.py",
+    "/home/az/aetcg-platform/pipeline/validation.py",
+    "/home/az/aetcg-platform/services/__init__.py",
+    "/home/az/aetcg-platform/services/agents.py",
+    "/home/az/aetcg-platform/tests/__init__.py",
+    "/home/az/aetcg-platform/tests/test_pipeline.py",
+    "/home/az/aetcg-platform/worker.py"
+  ]
+}
