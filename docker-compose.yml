@@ -12,6 +12,7 @@ services:
     environment:
       - REDIS_HOST=queue_broker
       - REDIS_PORT=6379
+    command: [sh, -c, "python worker.py & uvicorn main:app --host 0.0.0.0 --port 8000"]
     networks:
       - aetcg_secure_mesh
     depends_on:
@@ -22,16 +23,3 @@ services:
     # Explicitly omitting public port bindings blocks external network ingestion vectors entirely
     networks:
       - aetcg_secure_mesh
-
-  background_worker:
-    build:
-      context: .
-      target: runner
-    command: python worker.py
-    environment:
-      - REDIS_HOST=queue_broker
-      - REDIS_PORT=6379
-    networks:
-      - aetcg_secure_mesh
-    depends_on:
-      - queue_broker

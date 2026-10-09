@@ -73,14 +73,26 @@ AETCG consists of several primary layers:
 
 ## Configuration
 
-AETCG uses environment variables to configure runtime behavior. Common settings include:
+AETCG uses environment variables to configure runtime behavior, loaded from a `.env` file in the project root (see `.env.example` for a template).
 
-* `SERVICE_PORT` – API or orchestrator listening port.
-* `INGEST_TOPIC` – messaging queue or topic for incoming telemetry.
-* `AGENT_TIMEOUT` – maximum processing time for analysis agents.
-* `GOVERNANCE_MODE` – review policy mode (`auto`, `manual`, `hybrid`).
+To configure your environment:
+1. Copy the template: `cp .env.example .env`
+2. Edit `.env` to set your desired configuration values
 
-Edit `.env` to reflect your local or production environment settings.
+Key configuration variables include:
+
+* `APP_ENV` – Application environment (`development`, `staging`, or `production`)
+* `API_PORT` – API service port (default: 8000)
+* `REDIS_HOST` – Redis host for queue broker (default: `queue_broker`)
+* `REDIS_PORT` – Redis port (default: 6379)
+* `EXTERNAL_COMPLIANCE_API_URL` – External compliance API endpoint
+* `EXTERNAL_API_TIMEOUT_SEC` – Timeout for external API calls in seconds (default: 5.0)
+* `LLM_ENDPOINT_URL` – LLM service endpoint URL
+* `LLM_ACCESS_TOKEN` – Access token for LLM service (required for production)
+* `RATE_LIMIT_REQUESTS_PER_MINUTE` – Maximum API requests per minute per IP (default: 60)
+* `SUPERVISOR_TOKEN` – Token for supervisor approval endpoint
+
+Edit `.env` to reflect your local or production environment settings. The `.env` file is automatically ignored by Git to prevent accidental commitment of sensitive values.
 
 ## Local Development and Testing
 

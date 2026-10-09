@@ -1,10 +1,28 @@
+"""
+Application settings management using Pydantic BaseSettings.
+
+This module provides centralized configuration management for the AETCG platform.
+Settings are loaded from multiple sources with the following precedence:
+1. Environment variables (highest priority)
+2. Values from .env file in project root
+3. Default values defined in this file (lowest priority)
+
+To configure the application for your environment:
+1. Copy .env.example to .env: cp .env.example .env
+2. Edit .env to set your desired configuration values
+3. The application will automatically load these settings
+
+All settings are validated for type safety and constraints.
+"""
 from pydantic_settings import BaseSettings
-from pydantic import Field, validator
+from pydantic import Field, field_validator
 import os
 from typing import Optional
 
 
 class AppSettings(BaseSettings):
+    """Application configuration settings."""
+
     APP_ENV: str = Field(default="development", description="Application environment (development/production)")
     API_PORT: int = Field(default=8000, description="API service port", ge=1, le=65535)
     REDIS_HOST: str = Field(default="queue_broker", description="Redis host for queue broker")
@@ -20,12 +38,28 @@ class AppSettings(BaseSettings):
     )
 
     LLM_ENDPOINT_URL: str = Field(
-        default="https://studio.bearcatgpt.uc.edu/api/v1/",
+        default="",
         description="LLM service endpoint URL"
     )
     LLM_ACCESS_TOKEN: str = Field(
         default="",
         description="Access token for LLM service"
+    )
+
+    # Metrics-related settings
+    METRICS_ENABLED: bool = Field(
+        default=True,
+        description="Enable Prometheus metrics collection and exposure"
+    )
+    METRICS_PORT: int = Field(
+        default=8000,
+        description="Port for metrics endpoint (same as API port in this implementation)",
+        ge=1,
+        le=65535
+    )
+    METRICS_PATH: str = Field(
+        default="/metrics",
+        description="Path for metrics endpoint"
     )
 
     # Security-related settings
@@ -41,14 +75,16 @@ class AppSettings(BaseSettings):
 
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
-    @validator('APP_ENV')
+    @field_validator('APP_ENV')
+    @classmethod
     def validate_app_env(cls, v):
         allowed_envs = ['development', 'staging', 'production']
         if v not in allowed_envs:
             raise ValueError(f'APP_ENV must be one of {allowed_envs}')
         return v
 
-    @validator('LLM_ACCESS_TOKEN')
+    @field_validator('LLM_ACCESS_TOKEN')
+    @classmethod
     def validate_llm_token(cls, v):
         # In production, token should not be empty
         # This is a soft warning - in real implementation might check APP_ENV

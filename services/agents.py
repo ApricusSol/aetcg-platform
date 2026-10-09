@@ -6,9 +6,17 @@ Each agent interacts with a configurable LLM endpoint to perform specialized ana
 """
 import json
 import logging
+import time
 from typing import Dict, Any, Optional
 from openai import OpenAI
 from config.settings import settings
+from app.metrics import (
+    LLM_API_CALLS_TOTAL,
+    LLM_API_DURATION_SECONDS,
+    LLM_API_TOKEN_USAGE,
+    increment_counter,
+    observe_histogram,
+)
 
 logger = logging.getLogger("aetcg_agents")
 
@@ -59,6 +67,7 @@ class TriageAgent:
             On failure, returns a fallback response with medium risk score
             and UNCLASSIFIED_TIMEOUT category.
         """
+        start_time = time.time()
         try:
             response = self.client.chat.completions.create(
                 model="gpt-5.4-nano",  # Update this if your endpoint requires a specific model name
@@ -72,10 +81,25 @@ class TriageAgent:
             raw_result = response.choices[0].message.content
             if not isinstance(raw_result, str):
                 raise ValueError("Triage Agent returned empty or non-string content")
+
+            # Record successful LLM API call metrics
+            call_duration = time.time() - start_time
+            increment_counter(LLM_API_CALLS_TOTAL, {"agent_name": "triage", "status": "success"})
+            observe_histogram(LLM_API_DURATION_SECONDS, call_duration, {"agent_name": "triage"})
+
+            # Try to extract token usage if available (this depends on the LLM provider)
+            # For now, we'll skip token usage as it's not consistently available across providers
+            # In a real implementation, you'd extract this from response.usage if available
+
             logger.debug(f"Triage Agent Result: {raw_result}")
             return self.parse_analysis_result(raw_result)
 
         except Exception as e:
+            # Record failed LLM API call metrics
+            call_duration = time.time() - start_time
+            increment_counter(LLM_API_CALLS_TOTAL, {"agent_name": "triage", "status": "failure"})
+            observe_histogram(LLM_API_DURATION_SECONDS, call_duration, {"agent_name": "triage"})
+
             logger.error(f"Live LLM call failed at custom endpoint: {str(e)}. Applying fallback.")
             return {
                 "risk_score": 5,
@@ -152,6 +176,7 @@ class ComplianceCriticAgent:
             - High risk (>=7): audit fails, mandating human review
             - Low risk (<7): audit passes, allowing standard routing
         """
+        start_time = time.time()
         try:
             user_content = json.dumps({
                 "risk_score": risk_score,
@@ -170,12 +195,27 @@ class ComplianceCriticAgent:
             raw_result = response.choices[0].message.content
             if not isinstance(raw_result, str):
                 raise ValueError("Critic Agent returned empty or non-string content")
+
+            # Record successful LLM API call metrics
+            call_duration = time.time() - start_time
+            increment_counter(LLM_API_CALLS_TOTAL, {"agent_name": "critic", "status": "success"})
+            observe_histogram(LLM_API_DURATION_SECONDS, call_duration, {"agent_name": "critic"})
+
+            # Try to extract token usage if available (this depends on the LLM provider)
+            # For now, we'll skip token usage as it's not consistently available across providers
+            # In a real implementation, you'd extract this from response.usage if available
+
             return self.parse_critique_result(raw_result)
 
         except Exception as e:
+            # Record failed LLM API call metrics
+            call_duration = time.time() - start_time
+            increment_counter(LLM_API_CALLS_TOTAL, {"agent_name": "critic", "status": "failure"})
+            observe_histogram(LLM_API_DURATION_SECONDS, call_duration, {"agent_name": "critic"})
+
             logger.error(f"Critic Agent custom LLM call failed: {str(e)}. Applying fail-safe fallback.")
             if risk_score >= 7:
-                return {"audit_passed": False, "feedback": "FALLBACK TRIGGERED: High risk score. Human review mandated."}
+                return {"audit_passed": False, "feedback": "FALLBACK TRIGGERED: High score. Human review mandated."}
             return {"audit_passed": True, "feedback": "FALLBACK TRIGGERED: Processing cleared for standard autonomous routing."}
 
     @staticmethod
