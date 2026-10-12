@@ -34,7 +34,7 @@ def update_worker_health_signal():
         try:
             # Set health signal timestamp (expires in 20 seconds)
             # Updated when worker successfully processes a job or periodically when idle
-            redis_connection.setex("worker:health_signal", 20, int(time.time()))
+            redis_connection.set("worker:health_signal", 20, int(time.time()))
             time.sleep(5)  # Update every 5 seconds
         except Exception as e:
             logger.error(f"Failed to update worker health signal: {e}")
