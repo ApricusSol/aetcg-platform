@@ -3,6 +3,7 @@ import logging
 import json
 import re
 import threading
+from contextlib import asynccontextmanager
 from typing import Dict
 from fastapi import FastAPI, HTTPException, BackgroundTasks, status, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
@@ -76,9 +77,22 @@ def check_worker_heartbeat():
             time.sleep(3)  # Wait before retrying
 
 
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    """Start background thread to monitor worker heartbeat."""
+    heartbeat_thread = threading.Thread(target=check_worker_heartbeat, daemon=True)
+    heartbeat_thread.start()
+    logger.info("[*] Started worker heartbeat monitor")
+    try:
+        yield
+    finally:
+        logger.info("[*] Worker heartbeat monitor shutting down")
+
+
 app = FastAPI(
     title="Autonomous Enterprise Triage & Compliance Guard (AETCG)",
-    version="1.0.0-rc1"
+    version="1.0.0-rc1",
+    lifespan=lifespan,
 )
 
 # Add CORS middleware with environment-based configuration
@@ -90,14 +104,6 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT"],
     allow_headers=["*"],
 )
-
-
-@app.on_event("startup")
-def start_worker_heartbeat_monitor():
-    """Start background thread to monitor worker heartbeat."""
-    heartbeat_thread = threading.Thread(target=check_worker_heartbeat, daemon=True)
-    heartbeat_thread.start()
-    logger.info("[*] Started worker heartbeat monitor")
 
 # Add metrics middleware if enabled
 if settings.METRICS_ENABLED:
