@@ -69,6 +69,7 @@ class StateMachineOrchestrator:
         critic_output = self.critic_agent.critique(state["triage_verdict"], state["risk_score"])
         critic_time = time.time() - critic_start
         state["critic_feedback"] = critic_output["feedback"]
+        state["audit_passed"] = critic_output.get("audit_passed")
 
         # Record critic metrics
         increment_counter(LLM_API_CALLS_TOTAL, {"agent_name": "critic", "status": "success"})
@@ -82,7 +83,10 @@ class StateMachineOrchestrator:
             increment_counter(COMPLIANCE_FAIL_TOTAL)
 
         # Step 4: Conditional Routing Gate Based on Risk Thresholds
-        if state["risk_score"] >= 7:
+        if (
+            state["risk_score"] >= 7
+            or state["audit_passed"] is not True
+        ):
             state["status"] = "PAUSED_FOR_REVIEW"
             # Serialize state frame to Redis cache to allow human callback resumption
             self.redis_client.set(f"state:{raw_job_data['ticket_id']}", json.dumps(state))
