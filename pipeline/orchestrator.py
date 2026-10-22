@@ -85,11 +85,11 @@ class StateMachineOrchestrator:
         # Step 4: Conditional Routing Gate Based on Risk Thresholds
         # Fix is currently commented out below. Comment out 'If state ["risk_score"] >= 7'
         
-        #if (
-        #    state["risk_score"] >= 7
-        #    or state["audit_passed"] is not True
-        #):
-        if state["risk_score"] >= 7:
+        if (
+            state["risk_score"] >= 7
+            or state["audit_passed"] is not True
+        ):
+        #if state["risk_score"] >= 7:
             state["status"] = "PAUSED_FOR_REVIEW"
             # Serialize state frame to Redis cache to allow human callback resumption
             self.redis_client.set(f"state:{raw_job_data['ticket_id']}", json.dumps(state))
