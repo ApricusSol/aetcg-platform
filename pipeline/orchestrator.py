@@ -83,9 +83,9 @@ class StateMachineOrchestrator:
             increment_counter(COMPLIANCE_FAIL_TOTAL)
 
         # Step 4: Conditional Routing Gate Based on Risk Thresholds
-       # if (
+        #if (
         #    state["risk_score"] >= 7
-         #   or state["audit_passed"] is not True
+        #    or state["audit_passed"] is not True
         #):
         if state["risk_score"] >= 7:
             state["status"] = "PAUSED_FOR_REVIEW"
