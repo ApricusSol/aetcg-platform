@@ -1,12 +1,12 @@
 import re
 import json
 import os
-from pydantic import BaseModel, Field, field_validator
+from pydantic import BaseModel, Field, field_validator, EmailStr
 from typing import Dict, Pattern
 
 class TicketIngestionSchema(BaseModel):
     ticket_id: str = Field(..., description="Unique alphanumeric tracking string.")
-    reporter_email: str = Field(..., description="Corporate sender communication handle.")
+    reporter_email: EmailStr = Field(..., description="Corporate sender communication handle.")
     raw_text: str = Field(..., description="Unstructured description text payload.")
 
     @field_validator('reporter_email')

@@ -18,6 +18,36 @@ def test_pydantic_corporate_domain_enforcement():
     with pytest.raises(ValueError, match="Ingestion restricted to internal corporate system users."):
         TicketIngestionSchema(**invalid_data)
 
+@pytest.mark.parametrize("email", [
+    "bad address@enterprise.com",
+    "@enterprise.com",
+    "user@@enterprise.com",
+    "user name@enterprise.com",
+    "user\nname@enterprise.com",
+])
+def test_reject_malformed_corporate_emails(email):
+    with pytest.raises(ValueError):
+        TicketIngestionSchema(
+            ticket_id="TCK-F10",
+            reporter_email=email,
+            raw_text="Test ticket"
+        )
+
+
+@pytest.mark.parametrize("email", [
+    "analyst@enterprise.com",
+    "first.last@enterprise.com",
+    "support+alerts@enterprise.com",
+])
+def test_accept_valid_corporate_emails(email):
+    ticket = TicketIngestionSchema(
+        ticket_id="TCK-F10",
+        reporter_email=email,
+        raw_text="Test ticket"
+    )
+
+    assert ticket.reporter_email == email
+
 def test_regex_pii_scrubbing_pipeline():
     pipeline = DataSanitizationPipeline(dlq_path="tests/mock_dlq.log")
     dirty_text = "Urgent: Customer identity verification details matched SSN: 000-12-3456 profile."
