@@ -58,3 +58,32 @@ def test_enhanced_pii_scrubbing():
 
     if os.path.exists("tests/mock_dlq.log"):
         os.remove("tests/mock_dlq.log")
+
+
+@pytest.mark.parametrize("ssn", [
+    "123-45-6789",
+    "123 45 6789",
+    "123456789",
+])
+def test_ssn_format_variations_are_redacted(ssn):
+    pipeline = DataSanitizationPipeline()
+
+    dirty_text = f"Customer submitted SSN: {ssn}"
+    clean_text = pipeline.scrub_pii(dirty_text)
+
+    assert ssn not in clean_text
+    assert "[SSN_REDACTED]" in clean_text
+
+@pytest.mark.parametrize("card_number", [
+    "4111-1111-1111-1111",
+    "4111 1111 1111 1111",
+    "4111111111111111",
+])
+def test_credit_card_format_variations_are_redacted(card_number):
+    pipeline = DataSanitizationPipeline()
+
+    dirty_text = f"Payment information: {card_number}"
+    clean_text = pipeline.scrub_pii(dirty_text)
+
+    assert card_number not in clean_text
+    assert "[CREDIT_CARD_REDACTED]" in clean_text
