@@ -21,8 +21,8 @@ class DataSanitizationPipeline:
         self.dlq_path = dlq_path
         # Enhanced PII patterns for comprehensive data scrubbing
         self.pii_patterns: Dict[str, Pattern] = {
-            "ssn": re.compile(r'\b\d{3}-\d{2}-\d{4}\b'),
-            "credit_card": re.compile(r'\b\d{4}-\d{4}-\d{4}-\d{4}\b'),
+            "ssn": re.compile(r'\b(?:\d{3}[- ]\d{2}[- ]\d{4}|\d{9})\b'),
+            "credit_card": re.compile(r'\b\d{4}(?:[- ]?\d{4}){3}\b'),
             # Additional PII patterns
             "email": re.compile(r'\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Z|a-z]{2,}\b'),
             "phone": re.compile(r'\b\d{3}[-.]?\d{3}[-.]?\d{4}\b'),
